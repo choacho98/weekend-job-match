@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ff6b35">
+  <meta name="description" content="周末搭子——连接大学生与周边商家的可信周末兼职撮合平台。">
+  <title>周末搭子｜大学生周末兼职撮合</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement"><span>本周末 · 校园周边已有 32 个岗位开放报名</span><button id="announcementCta">去看看 →</button></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="周末搭子首页">
+      <span class="brand-mark">搭</span>
+      <span><b>周末搭子</b><small>Weekend Buddy</small></span>
+    </a>
+    <nav aria-label="主导航">
+      <a href="#jobs">找兼职</a><a href="#process">怎么用</a><a href="#trust">安心保障</a>
+    </nav>
+    <div class="top-actions">
+      <div class="role-switch" role="group" aria-label="切换身份">
+        <button class="active" data-role="student">我是学生</button><button data-role="merchant">我是商家</button>
+      </div>
+      <button class="avatar" aria-label="个人中心">林</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero student-view">
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> 离学校近 · 时间正合适 · 工资有保障</span>
+        <h1>这个周末，<br><em>赚点生活费</em>。</h1>
+        <p>不用刷群、不怕踩坑。告诉我们你的时间和偏好，AI 帮你从校园周边找到真正合适的短期兼职。</p>
+        <div class="hero-search">
+          <label><span>⌖</span><input id="heroSearch" placeholder="搜岗位、商家或地点" aria-label="搜索岗位"></label>
+          <button id="heroSearchBtn">找工作 <span>→</span></button>
+        </div>
+        <div class="quick-tags"><span>大家在搜</span><button>咖啡店</button><button>展会协助</button><button>日结</button><button>本周六</button></div>
+      </div>
+      <div class="hero-visual" aria-label="岗位匹配示意">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="phone-card">
+          <div class="phone-head"><span>09:41</span><span>● ●●</span></div>
+          <div class="hello"><small>早上好，林同学 👋</small><b>周末有空吗？</b></div>
+          <div class="match-card">
+            <div class="match-top"><span class="shop-icon coral">☕</span><div><b>精品咖啡店员</b><small>山茶咖啡 · 距你 800m</small></div><strong>96%<small>匹配</small></strong></div>
+            <div class="chips"><span>周六 10:00–18:00</span><span>¥22/小时</span></div>
+            <button class="mini-apply">一键报名</button>
+          </div>
+          <div class="match-card ghost-card"><span class="shop-icon blue">展</span><div><b>校园展会协助</b><small>¥180/天 · 1.2km</small></div><strong>92%</strong></div>
+          <div class="phone-nav"><span>⌂<small>首页</small></span><span>⌕<small>发现</small></span><span>♡<small>收藏</small></span><span>◉<small>我的</small></span></div>
+        </div>
+        <div class="float-note note-a"><span>✓</span><div><b>已实名认证</b><small>商家资质平台审核</small></div></div>
+        <div class="float-note note-b"><span>¥</span><div><b>工资保障</b><small>完工后最快当日到账</small></div></div>
+      </div>
+    </section>
+
+    <section class="merchant-hero merchant-view" hidden>
+      <div>
+        <span class="eyebrow"><i></i> 临时缺人，不必临时抓狂</span>
+        <h1>周末用工，<br><em>30 分钟匹配到人</em>。</h1>
+        <p>发布需求后，平台优先触达附近、时间合适且信用良好的大学生。报名筛选、到岗确认、工资结算一站完成。</p>
+        <button class="primary-btn" id="openPostJob">＋ 发布用工需求</button>
+      </div>
+      <div class="merchant-board">
+        <div class="board-title"><span><i></i> 招聘进展</span><small>实时更新</small></div>
+        <div class="board-row"><span class="shop-icon coral">茶</span><div><b>周六门店协助 · 2人</b><small>已有 7 位学生报名</small></div><strong>筛选中</strong></div>
+        <div class="candidate-row"><span class="avatar small">陈</span><div><b>陈同学 <em>信用 98</em></b><small>距门店 1.1km · 有餐饮经验</small></div><span class="match-pill">95% 匹配</span></div>
+        <div class="candidate-row"><span class="avatar small purple">周</span><div><b>周同学 <em>信用 96</em></b><small>距门店 700m · 可长期周末</small></div><span class="match-pill">92% 匹配</span></div>
+        <button class="board-button">查看全部报名者 →</button>
+      </div>
+    </section>
+
+    <section class="proof-strip">
+      <div><b>32<sup>个</sup></b><span>本周末在招岗位</span></div><div><b>1.8<sup>km</sup></b><span>平均通勤距离</span></div><div><b>21.5<sup>元/h</sup></b><span>平台岗位平均时薪</span></div><div><b>100<sup>%</sup></b><span>商家资质审核</span></div>
+    </section>
+
+    <section class="category-section" id="categories">
+      <div class="section-heading">
+        <div><span class="kicker">WEEKEND POSSIBILITIES</span><h2>你的空闲，可以变成这些收入</h2><p>不只服务门店，也连接社区家庭、个人需求与校园周边活动 · 以下均为平台场景设计</p></div>
+      </div>
+      <div class="availability-bar">
+        <div><span class="calendar-icon">日</span><div><b>第一步，先告诉我们你什么时候有空</b><small>时间重合是撮合的硬门槛，再谈距离、技能和报酬</small></div></div>
+        <div class="slot-pills"><button class="active">周六白天</button><button>周六晚上</button><button>周日白天</button><button>两天都行</button></div>
+      </div>
+      <div class="category-grid">
+        <button class="category-card" data-category="store"><span>☕</span><b>门店协助</b><small>奶茶、咖啡、烘焙、零售</small><em>商家临时缺岗</em></button>
+        <button class="category-card" data-category="tutor"><span>✎</span><b>家教陪练</b><small>学科辅导、语言、乐器</small><em>家庭周末需求</em></button>
+        <button class="category-card" data-category="pet"><span>🐾</span><b>宠物照护</b><small>遛狗、喂猫、上门陪伴</small><em>社区个人需求</em></button>
+        <button class="category-card" data-category="event"><span>🎪</span><b>活动协作</b><small>展会、赛事、市集、路演</small><em>短时多人需求</em></button>
+        <button class="category-card" data-category="content"><span>◉</span><b>内容与拍摄</b><small>探店、剪辑、商品拍摄</small><em>小店增长需求</em></button>
+        <button class="category-card" data-category="service"><span>⚡</span><b>便民服务</b><small>跑腿、整理、陪诊引导</small><em>社区弹性需求</em></button>
+      </div>
+    </section>
+
+    <section class="jobs-section" id="jobs">
+      <div class="section-heading">
+        <div><span class="kicker">THIS WEEKEND</span><h2>离你近的好工作</h2><p>根据你的位置、空闲时间和偏好推荐 · 以下为演示岗位</p></div>
+        <button class="link-btn" id="viewAll">查看全部 32 个岗位 →</button>
+      </div>
+      <div class="filter-row" role="group" aria-label="岗位筛选">
+        <button class="filter active" data-filter="all">✨ 智能推荐</button><button class="filter" data-filter="saturday">周六</button><button class="filter" data-filter="sunday">周日</button><button class="filter" data-filter="near">离我最近</button><button class="filter" data-filter="highpay">高时薪</button><button class="filter" data-filter="daily">当天结算</button>
+      </div>
+      <div class="job-grid" id="jobGrid"></div>
+    </section>
+
+    <section class="ai-section">
+      <div class="ai-card">
+        <div class="ai-icon">✦</div>
+        <div><span class="kicker light">AI SMART MATCH</span><h2>不是更多岗位，<br>是更适合你的岗位。</h2><p>综合时间、距离、技能、薪酬和过往评价，给每份兼职一个可解释的匹配分。</p></div>
+        <div class="score-demo">
+          <div class="score-ring"><b>96</b><small>匹配分</small></div>
+          <ul><li><span>时间契合度</span><b>100%</b></li><li><span>距离便利度</span><b>94%</b></li><li><span>经验适配度</span><b>91%</b></li></ul>
+        </div>
+      </div>
+      <div class="match-logic">
+        <div><span>1</span><b>时间先过筛</b><small>双方时段必须重合</small></div><i>→</i><div><span>2</span><b>半径内召回</b><small>优先校园周边 3km</small></div><i>→</i><div><span>3</span><b>技能与偏好排序</b><small>会做、愿意做更重要</small></div><i>→</i><div><span>4</span><b>信用动态加权</b><small>守约双方优先匹配</small></div>
+      </div>
+    </section>
+
+    <section class="process-section" id="process">
+      <div class="section-heading centered"><div><span class="kicker">HOW IT WORKS</span><h2>从看到到拿到工资，只要四步</h2><p>关键节点双方确认，减少爽约和扯皮</p></div></div>
+      <div class="process-grid">
+        <article><span>01</span><div class="process-icon">☝</div><h3>智能匹配</h3><p>填写空闲时间与偏好，获取个性化岗位推荐。</p></article>
+        <article><span>02</span><div class="process-icon">⚡</div><h3>一键报名</h3><p>用学生身份与技能档案报名，无需重复填简历。</p></article>
+        <article><span>03</span><div class="process-icon">⌖</div><h3>到岗打卡</h3><p>双方确认到岗和工时，异常情况平台可追溯。</p></article>
+        <article><span>04</span><div class="process-icon">¥</div><h3>安心结算</h3><p>完工确认后结算，收入与记录随时可查。</p></article>
+      </div>
+    </section>
+
+    <section class="trust-section" id="trust">
+      <div class="trust-copy"><span class="kicker">TRUST & SAFETY</span><h2>第一次兼职，<br>也能心里有底。</h2><p>平台把分散在聊天群里的口头约定，变成双方都能查看的标准流程。</p><button class="text-btn" id="trustDetails">了解平台保障规则 →</button></div>
+      <div class="trust-grid">
+        <article><span>盾</span><div><h3>商家实名与资质审核</h3><p>营业信息、门店地址和负责人均需核验，异常商家暂停发布。</p></div></article>
+        <article><span>约</span><div><h3>上岗前电子约定</h3><p>时间、地点、报酬和工作内容提前确认，拒绝临时变更。</p></div></article>
+        <article><span>评</span><div><h3>双向信用记录</h3><p>迟到、爽约、拖欠等行为记入信用，优质双方获得更多曝光。</p></div></article>
+        <article><span>服</span><div><h3>争议协助处理</h3><p>保留报名、沟通与工时记录，出现争议可发起平台协助。</p></div></article>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div><span>🎒</span><div><h2>周末别闲着，去认识更大的世界。</h2><p>完善你的时间与技能档案，最快 3 分钟找到合适兼职。</p></div></div>
+      <button id="startMatch">开始智能匹配 →</button>
+    </section>
+  </main>
+
+  <footer><div class="brand footer-brand"><span class="brand-mark">搭</span><span><b>周末搭子</b><small>大学生周末兼职撮合平台</small></span></div><p>让每个周末，都更有价值。</p><span>产品演示 · 岗位与数据均为示例</span></footer>
+
+  <nav class="mobile-nav"><button class="active">⌂<small>首页</small></button><button id="mobileJobs">⌕<small>找兼职</small></button><button id="mobilePost">＋<small>发布</small></button><button>♡<small>收藏</small></button><button>◉<small>我的</small></button></nav>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="modal" id="jobModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+      <button class="modal-close" aria-label="关闭">×</button><div id="jobModalContent"></div>
+    </section>
+    <section class="modal post-modal" id="postModal" role="dialog" aria-modal="true" aria-labelledby="postTitle" hidden>
+      <button class="modal-close" aria-label="关闭">×</button>
+      <span class="kicker">QUICK POST</span><h2 id="postTitle">发布周末用工需求</h2><p>填写核心信息，约 2 分钟完成。以下提交仅作产品演示。</p>
+      <form id="postForm">
+        <label>岗位名称<input required placeholder="例如：周六咖啡店协助"></label>
+        <div class="form-row"><label>日期<select required><option>本周六</option><option>本周日</option><option>周六、周日</option></select></label><label>需要人数<select required><option>1 人</option><option>2 人</option><option>3 人</option><option>4 人及以上</option></select></label></div>
+        <div class="form-row"><label>开始时间<input type="time" value="10:00" required></label><label>时薪<input type="number" value="22" min="15" required></label></div>
+        <label>工作说明<textarea placeholder="简单说明工作内容和希望候选人具备的能力"></textarea></label>
+        <button class="primary-btn full" type="submit">确认发布并开始匹配</button>
+      </form>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
+
